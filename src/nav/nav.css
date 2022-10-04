@@ -1,0 +1,11 @@
+nav {
+    font-weight: 500;
+}
+
+.nav-list {
+    list-style-type: none;
+}
+
+.nav-list a {
+    text-decoration: none;
+}

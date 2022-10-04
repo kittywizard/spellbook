@@ -3,7 +3,11 @@ import "./nav.css"
 export default function Nav() {
     return (
         <nav>
-            linx
+            <ul className="nav-list">
+                <li>
+                    <a href="#">home</a>
+                </li>
+            </ul>
         </nav>
     )
 }
