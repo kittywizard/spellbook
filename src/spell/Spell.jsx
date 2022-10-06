@@ -3,9 +3,11 @@ import { GiChainedArrowHeads } from "react-icons/gi";
 
 export default function Spell(props) {
     return (
-        <div>
-            Magic Missile
+        <div className="spell-box">
             <GiChainedArrowHeads />
+            <p className="spell-description">
+                Magic Missile
+            </p>
         </div>
     )
 }

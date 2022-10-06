@@ -1,0 +1,14 @@
+.spell-box {
+    padding: 0.5em;
+    margin: 0.25em;
+    background-color: aqua;
+    width: fit-content;
+    border-radius: 0.5em;
+    font-size: 3rem;
+
+}
+
+.spell-description {
+    font-size: 0.75rem;
+    font-weight: 500;
+}
