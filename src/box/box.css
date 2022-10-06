@@ -8,13 +8,14 @@ section {
 
 .spell-level {
     font-weight: 800;
-    font-size: 1.25rem;
+    font-size: 1rem;
+    font-weight: 400;
     padding: 0.5em 1em;
-    background-color: rgb(104, 4, 95);
+    background-color: rgb(228, 228, 228);
     border-radius: 1.5em 1.5em 0 0;
 }
 
 .spells {
     display: grid;
-    
+    grid-template-columns: repeat(2, 1fr);
 }

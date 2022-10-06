@@ -6,7 +6,7 @@ export default function Spell(props) {
         <div className="spell-box">
             <GiChainedArrowHeads />
             <p className="spell-description">
-                Magic Missile
+               {props.spellName}
             </p>
         </div>
     )
