@@ -1,4 +1,11 @@
 body {
     font-family: 'Manrope', sans-serif; 
+    padding: 0;
+    margin: 0;
     /* 300, 500, 700 */
+}
+
+.box-container {
+     display: flex;
+     justify-content: center;
 }

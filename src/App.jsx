@@ -1,4 +1,5 @@
 import Header from "./header/Header"
+import Box from "./box/Box"
 import "./App.css"
 
 function App() {
@@ -6,6 +7,9 @@ function App() {
   return (
     <div>
       <Header />
+      <div className="box-container">
+        <Box />
+      </div>
     </div>
   )
 }

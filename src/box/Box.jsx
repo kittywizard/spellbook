@@ -4,7 +4,8 @@ import Spell from "../spell/Spell";
 export default function Box(props) {
     return (
         <section>
-            box
+            Level 1
+            <Spell />
         </section>
     )
 }
