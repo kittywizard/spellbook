@@ -1,0 +1,21 @@
+nav {
+    font-weight: 500;
+}
+
+.nav-list {
+    list-style-type: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 66%;
+    background-color: #d8ddf0;
+    height: 100vh;
+    z-index: 2;
+    padding: 2em 0;
+    transform: translateX(-100%);
+    transition: transform .3s;
+}
+
+.nav-list a {
+    text-decoration: none;
+}
