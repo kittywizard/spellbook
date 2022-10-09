@@ -1,5 +1,5 @@
-import Header from "./header/Header"
-import Box from "./box/Box"
+import Header from "./components/header/Header"
+import Box from "./components/box/Box"
 import "./App.css"
 
 function App() {
