@@ -1,6 +1,5 @@
 import Header from "./components/header/Header"
 import Box from "./components/box/Box"
-import "./App.css"
 
 import { useState } from "react";
 

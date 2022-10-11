@@ -1,4 +1,3 @@
-import "./nav.css"
 import menu from "./assets/menu.svg"
 import exit from "./assets/exit.svg"
 
