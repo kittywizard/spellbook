@@ -1,4 +1,4 @@
-section {
+.box {
     box-shadow: 5px 7px 19px -1px rgba(0,0,0,0.32);
     -webkit-box-shadow: 5px 7px 19px -1px rgba(0,0,0,0.32);
     -moz-box-shadow: 5px 7px 19px -1px rgba(0,0,0,0.32);

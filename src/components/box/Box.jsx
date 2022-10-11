@@ -3,9 +3,9 @@ import Spell from "../spell/Spell";
 
 export default function Box(props) {
     return (
-        <section>
+        <section className="box">
             <div className="spell-level">
-                Level 1
+                Level {props.user.level}
             </div>
             <div className="spells">
                 <Spell />
