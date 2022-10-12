@@ -1,7 +1,8 @@
 import Nav from "../nav/Nav"
 
 
-export default function Header() {
+const Header:React.FC = () => {
+
     return (
         <header className="header">
             <Nav />
@@ -9,3 +10,5 @@ export default function Header() {
         </header>
     )
 }
+
+export default Header;
