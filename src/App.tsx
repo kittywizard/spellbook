@@ -1,28 +1,29 @@
 import Header from "./components/header/Header"
-import Box from "./components/box/Box"
+import Box from "./components/box/Box";
+import { useContext } from "react";
+import {Context} from "./Context";
 
 import { useState } from "react";
 
-function App() {
+const App:React.FC = () => {
 
-  const [user, setUser] = useState({
-    name: "",
-    class: "",
-    level: 1
-  });
+  const  {user, setUser} = useContext(Context);
 
   const [firstTime, setFirstTime] = useState(true);
 
-  function formSubmit(event) {
+  function formSubmit(event: any) {
     event.preventDefault();
-    console.log(event);
+    setUser(({
+      name: event.target.name.value,
+      class: event.target.class.value,
+      level: event.target.level.value
+    }));
+    setFirstTime(false);
   }
 
   return (
     <>
-      <Header 
-        user ={user}
-      />
+      <Header />
       {firstTime ?
         <form onSubmit={(e) => formSubmit(e)} className="start-form">
           Welcome to the Spellbook!
@@ -37,7 +38,7 @@ function App() {
           <label htmlFor="level" className="label">
             Level:
           </label>
-          <input type="number" min="1" max="20"></input>
+          <input type="number" min="1" max="20" name="level"></input>
 
           <button type="submit" className="btn">
             Go!
@@ -45,7 +46,7 @@ function App() {
         </form>
       :
         <section className="box-container">
-          <Box user={user}/>
+          <Box />
         </section>
       }
     </>

@@ -4,7 +4,7 @@ header {
   align-items: center;
   font-size: 1rem;
   font-weight: 800;
-  background-color: #7db5e6;
+  background-color: rgb(125, 181, 230);
 }
 
 header h3 {
@@ -74,7 +74,7 @@ nav ul li {
   font-size: 1rem;
   font-weight: 400;
   padding: 0.5em 1em;
-  background-color: #e4e4e4;
+  background-color: rgb(228, 228, 228);
   border-radius: 1.5em 1.5em 0 0;
 }
 

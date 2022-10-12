@@ -1,10 +1,16 @@
-import menu from "./assets/menu.svg"
-import exit from "./assets/exit.svg"
+import menu from "./assets/menu.svg";
+import exit from "./assets/exit.svg";
 
-export default function Nav() {
+import {Context} from "../../Context";
+import {useContext} from "react";
 
-    function openMenu(bool) {
-        const menu = document.querySelector('.nav-list');
+
+const Nav:React.FC = () => {
+
+    const {user} = useContext(Context);
+
+    function openMenu(bool: boolean) {
+        const menu:HTMLUListElement = document.querySelector('.nav-list') as HTMLUListElement;
         bool ? menu.style.transform = "translateX(0)" : menu.style.transform = "translateX(-100%)";
     }
 
@@ -19,19 +25,19 @@ export default function Nav() {
                             <span className="char-info-bold">
                                 Name:
                             </span> 
-                            Tali
+                            {user.name}
                         </p>
                         <p>
                             <span className="char-info-bold">
                                 Class:
                             </span> 
-                            Sorcerer
+                            {user.class}
                         </p>
                         <p>
                             <span className="char-info-bold">
                                 Level:
                             </span> 
-                            1
+                            {user.level}
                         </p>
                     </div>
                 </li>
@@ -42,3 +48,5 @@ export default function Nav() {
         </nav>
     )
 }
+
+export default Nav;
