@@ -5,14 +5,7 @@ import {Context} from "./Context";
 
 import { useState } from "react";
 
-interface iUserState {
-  name: string,
-  class: string,
-  level: number
-}
-
 const App:React.FC = () => {
-
 
   const  {user, setUser} = useContext(Context);
 
@@ -20,7 +13,6 @@ const App:React.FC = () => {
 
   function formSubmit(event: any) {
     event.preventDefault();
-    console.log(event.target.name.value);
     setUser(({
       name: event.target.name.value,
       class: event.target.class.value,
