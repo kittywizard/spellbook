@@ -1,7 +1,15 @@
+import {useContext} from "react";
+import {Context} from "../Context";
+
 const Home:React.FC = () => {
+//home needs to check for status of state
+    const {firstTime, setFirstTime} = useContext(Context);
+    
     return (
         <section>
-            home here
+         
+            Welcome to the Spellbook!
+          
         </section>
     )
 }

@@ -8,7 +8,9 @@ interface iUserState {
   
 const Context = createContext<any | null>(null);
 
-function ContextProvider({children}) {
+function ContextProvider({children}: any) {
+
+    const [firstTime, setFirstTime] = useState(true);
 
     const [user, setUser] = useState<iUserState>({
         name: "Default Name",
@@ -17,7 +19,7 @@ function ContextProvider({children}) {
       });
 
     return (
-        <Context.Provider value={{user, setUser}}>
+        <Context.Provider value={{user, setUser, firstTime, setFirstTime}}>
             {children}
         </Context.Provider>
     )
