@@ -14,10 +14,11 @@ const App:React.FC = () => {
   return (
     <>
       <Header />
-
-        <section className="box-container">
-          <Box />
-        </section>
+      <section>
+        <a href="/"> Home</a>
+        <a href="/start">Start</a>
+        <a href="/select">Select</a>
+      </section>
       
       <Routes>
           <Route path="/" element={<Home/>}/>

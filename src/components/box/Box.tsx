@@ -3,7 +3,7 @@ import Spell from "../spell/Spell";
 import {Context} from "../../Context";
 import {useContext} from "react";
 
-export default function Box() {
+const Box:React.FC = () => {
 
     const {user} = useContext(Context);
 
@@ -20,3 +20,5 @@ export default function Box() {
         </section>
     )
 }
+
+export default Box;
