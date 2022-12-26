@@ -6,6 +6,8 @@
 
 App to track spells and abilities that are active or cast in tabletop gaming (D&D, Pathfinder)
 
+** Currently on hold while I work on the API! **
+
 # Built with
 
   - TypeScript
